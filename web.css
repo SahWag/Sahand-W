@@ -8,12 +8,19 @@ head {
   background-color: #D0CCD0;
   margin: auto;
   text-align: center;
-  color: #333333; 
+  color: #333333;
+  font-size: 14px;
 }
 
-body, h1, h2, p {
-  margin: 0;
-  padding: 0;
+.title-bar,
+strong{
+  font-weight: bold;
+  color: #F42C04;
+  font-size: 18px;
+}
+
+.about-me {
+
 }
 
 body {
@@ -24,3 +31,5 @@ body {
   margin-right:10%;
   margin-bottom:15%;
 }
+
+
