@@ -6,4 +6,8 @@ body, h1, h2, p {
 body {
   font-family: Arial, sans-serif;
   background-color: #35254d;
+  margin-top: 1%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:15%;
 }
