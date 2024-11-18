@@ -59,6 +59,9 @@ margin-right: auto;
   background-color: #333333;
 }
 
+.nav-bar a{
+text-decoration: none;
+}
 
 
 ul {
