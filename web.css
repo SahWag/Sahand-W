@@ -56,6 +56,10 @@ margin-right: auto;
   height:201px;
 }
 
+.nav-bar{
+  text-align: center;
+}
+
 ul {
 margin: auto;
 }
@@ -72,12 +76,13 @@ li {
   padding-right: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-  text-shadow: 0px 1px #333333;
+  text-shadow: 0px 2px #333333;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #333333;
+  margin-top: 0%;
 }
 
 
