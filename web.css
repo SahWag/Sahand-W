@@ -48,6 +48,12 @@ header {
   box-shadow: 16px 16px;
 }
 
+li {
+  display: inline;
+  background-color: #DB3069;
+  margin: auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #333333;
