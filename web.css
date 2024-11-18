@@ -80,9 +80,11 @@ li {
   text-shadow: 0px 2px #333333;
 }
 
-a.nav-bar-link{
+nav-bar-link{
   color: #FBFCFF;
   text-decoration: none; /* no underline */
+  font-weight: bold;
+  font-size: 18px;
 }
 
 body {
