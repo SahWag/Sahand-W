@@ -84,4 +84,7 @@ body {
   margin-top: 0%;
 }
 
+.hidden {
+   display: none;
+}
 
