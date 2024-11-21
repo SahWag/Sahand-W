@@ -72,15 +72,16 @@ border-top-style: none;
 border-left-style:  none;
 border-right-style:  none;
 border-bottom-style:  solid;
-width: 95%;
+width: 99%;
 font-size: 16px;
 line-height: 1.5;
 color: #FBFCFF;
 }
 
-.project h{
+.project strong{
 font-size: 24px;
   font-weight: bold;
+  text-align: center;
   color: #4357AD;
 }
 
