@@ -79,6 +79,10 @@ line-height: 1.5;
 color: #FBFCFF;
 }
 
+.project ul{
+text-align: center;
+}
+
 .project strong{
 font-size: 20px;
   font-weight: bold;
