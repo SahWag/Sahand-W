@@ -99,6 +99,7 @@ color: #FBFCFF;
 display: block;
 margin-left: auto;
 margin-right: auto;
+  object-fit: contain;
 }
 
 .nav-bar{
