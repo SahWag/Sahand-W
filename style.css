@@ -170,8 +170,8 @@ transition: 1s;
 
 .project-hidden{
 	display: none;
-	position: relative;
-	transition:top 1s ease;
+	transition: 1s;
+	color:  #EFE3C2;
 }
 
 .project{
@@ -190,6 +190,7 @@ transition: 1s;
 	box-shadow: 0px 4px #8AB2A6;
 	position: relative;
 	transition:top 1s ease;
+	color:#123524;
 }
 
 .big{
