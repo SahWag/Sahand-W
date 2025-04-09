@@ -81,7 +81,7 @@ function shiftR(id_) {
 	var projects = ['thesis', 'march','stogl','deino'];
 	var current_index = 0;
 	for(let i=0; i<projects.length; i++){
-		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects([i]))
+		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
 		{
 		current_index = i;
 		}
@@ -102,7 +102,7 @@ function shiftL(id_) {
 	var current_index = 0;
 	console.log(frameObj.contentWindow.document.getElementsByClassName('project'));
 	for(let i=0; i<projects.length; i++){
-		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects([i]))
+		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
 		{
 		current_index = i;
 		}
