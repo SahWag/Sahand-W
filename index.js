@@ -127,7 +127,3 @@ function shiftL(id_) {
 
 
 }
-
-
-
-}
