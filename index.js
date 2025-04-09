@@ -87,11 +87,11 @@ function shiftR(id_) {
 		}
 	}
 
-	frameObj.contentWindow.document.getElementsByClassName('project')[0].top=100vh;
+	frameObj.contentWindow.document.getElementsByClassName('project')[0].style.top='100vh';
 	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
 	current_index+=1;
 	if (current_index>=projects.length){current_index=0;}
-	frameObj.contentWindow.document.getElementById(projects[current_index])[0].top=0vh;
+	frameObj.contentWindow.document.getElementById(projects[current_index])[0].style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 
 
@@ -110,11 +110,11 @@ function shiftL(id_) {
 		}
 	}
 
-	frameObj.contentWindow.document.getElementsByClassName('project')[0].top=100vh;
+	frameObj.contentWindow.document.getElementsByClassName('project')[0].style.top='100vh';
 	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
 	current_index -=1;
 	if (current_index<0){current_index=projects.length-1;}
-	frameObj.contentWindow.document.getElementById(projects[current_index])[0].top=0vh;
+	frameObj.contentWindow.document.getElementById(projects[current_index])[0].style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 
 
