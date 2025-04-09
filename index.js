@@ -1,6 +1,6 @@
 let project_titles = ['Virtual dynamics Eigenmanifold control', 'Project March','Stogl robotics internship','Deinobotics'];
 let project_subtitles = ['A two-layer architecture for controlling nonlinear normal modes of underactuated mechanical systems'
-, 'A fully motorized lower-body exoskeleton\nfor pilots with a full spinal chord injury','A task-agnostic, robot-agnostic task planner for\nROS 2 using symbolic reasoning','A robotic biped with a tail\n.'];
+, 'A fully motorized lower-body exoskeleton<br>for pilots with a full spinal chord injury','A task-agnostic, robot-agnostic task planner for<br>ROS 2 using symbolic reasoning','A robotic biped with a tail<br>'];
 	
 function transition() {
 	document.getElementById("test1").style.border="1px solid";
