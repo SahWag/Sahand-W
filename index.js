@@ -90,7 +90,7 @@ function shiftR(id_) {
 	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
 	current_index+=1;
 	if (current_index>=projects.length){current_index=0;}
-	frameObj.contentWindow.document.getElementByid(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 
 
 
@@ -111,7 +111,7 @@ function shiftL(id_) {
 	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
 	current_index -=1;
 	if (current_index<=projects.length){current_index=projects.length-1;}
-	frameObj.contentWindow.document.getElementByid(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 
 
 }
