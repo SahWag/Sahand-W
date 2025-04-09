@@ -170,6 +170,8 @@ transition: 1s;
 
 .project-hidden{
 	display: none;
+	position: relative;
+	transition:top 1s ease;
 }
 
 .project{
@@ -186,6 +188,8 @@ transition: 1s;
 	overflow-y:scroll;
 	scrollbar-color: #333333 #8AB2A6;
 	box-shadow: 0px 4px #8AB2A6;
+	position: relative;
+	transition:top 1s ease;
 }
 
 .big{
