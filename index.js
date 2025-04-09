@@ -1,4 +1,7 @@
-
+let project_titles = ['Virtual dynamics Eigenmanifold control', 'Project March','Stogl robotics internship','Deinobotics'];
+let project_subtitles = ['A two-layer architecture for controlling nonlinear normal modes of underactuated mechanical systems'
+, 'A fully motorized exoskeleton for ','A task-agnostic, robot-agnostic task planner for ROS 2 using symbolic reasoning','A robotic biped with a tail'];
+	
 function transition() {
 	document.getElementById("test1").style.border="1px solid";
 }
@@ -93,6 +96,8 @@ function shiftR(id_) {
 	if (current_index>=projects.length){current_index=0;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
 
 
 
@@ -101,6 +106,7 @@ function shiftR(id_) {
 function shiftL(id_) {
 	var frameObj = document.getElementById('frame');
 	var projects = ['thesis', 'march','stogl','deino'];
+	
 	var current_index = 0;
 	console.log(frameObj.contentWindow.document.getElementsByClassName('project'));
 	for(let i=0; i<projects.length; i++){
@@ -109,13 +115,19 @@ function shiftL(id_) {
 		current_index = i;
 		}
 	}
-
+	
 	// frameObj.contentWindow.document.getElementsByClassName('project')[0].style.top='100vh';
 	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
 	current_index -=1;
 	if (current_index<0){current_index=projects.length-1;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
+
+
+}
+
 
 
 }
