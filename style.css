@@ -116,7 +116,7 @@ li.selected{
 
 .body-open{
 padding-top:4%;
-width:80%;
+width:100%;
 height:100%;
 margin: auto;
 animation-name: open-page;
@@ -125,7 +125,7 @@ animation-duration: 0.5s;
 
 .body-close{
 padding-top:4%;
-width:80%;
+width:100%;
 height:0%;
 margin: auto;
 animation-name: close-page;
