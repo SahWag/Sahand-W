@@ -139,16 +139,16 @@ animation-duration: 0.5s;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	text-align: justify;
-	width: 80%;
+	width: 90%;
 	height: 90vh;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 4%;
+	margin-right: 4%;
 	border: none;
 	font-size: 14pt;
 	line-height:1.5;
 	background-color: #EFE3C2;
-	padding-left:5%;
-	padding-right:5%;
+	padding-left:1%;
+	padding-right:1%;
 
 }
 
@@ -170,8 +170,6 @@ transition: 1s;
 
 .project-hidden{
 	display: none;
-	transition: 1s;
-	color:  #EFE3C2;
 }
 
 .project{
@@ -180,7 +178,7 @@ transition: 1s;
 	padding-left:5%;
 	padding-right:5%;
 	padding-top:2%;
-	padding-bottom:2%;
+	padding-bottom:1%;
 	width:90%;
 	height:59vh;
 	font-size: 16px;
@@ -188,9 +186,6 @@ transition: 1s;
 	overflow-y:scroll;
 	scrollbar-color: #333333 #8AB2A6;
 	box-shadow: 0px 4px #8AB2A6;
-	position: relative;
-	transition:top 1s ease;
-	color:#123524;
 }
 
 .big{
