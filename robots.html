@@ -10,13 +10,31 @@
 <div class="big">Virtual dynamics Eigenmanifold control</div>
 <div class="big_subtitle">A two-layer architecture for controlling nonlinear
 normal modes of underactuated mechanical systems</div>
-<div class="project-hidden" id='thesis'>
-The study of nonlinear normal modes deals with the identification and discovery of stable periodic evolutions of nonlinear systems in the absence of actuation. This is especially interesting for robotic manipulators, as they are often tasked with performing single trajectories many times. Exploiting these nonlinear normal modes can substantially reduce the energy expenditure of controllers compared to more traditional control methods. In tasks like locomotion, modal excitation can assist in both leg design and trajectory generation.
-During my literature research, I was looking into the possibility of using nonlinear normal modes for continuum soft manipulators. However, in my search I found that, while quite some work is available on the excitation of nonlinear modes for robotic applications, specifically through Eigenmanifold theory (Add a reference here), every work assumes full actuation of the system. Since continuum manipulators are infinitely underactuated, this is a significant research gap to fill. As such, the focus of my thesis shifted towards the question how we can excite modes of underacuated systems with lower degrees of actuation first.
-To make this work, I am employing state-feedback linearization methods to prove we can excite the modes of nonlinear underactuated mechanical systems given specific restraints on the system we consider. So far, this project has taught me a lot related to soft robotic modelling and control, nonlinear control (and proving stability for nonlinear control) and differential geometry. While my thesis is not yet finished, I hope to be able to share more information soon!
+
+<div class="project" id='thesis'>
+<div class="section-column-large" style="text-align:justify;">
+Through the use of Eigenmanifolds, . Using these to design point-to-point trajectories, we can achieve control efforts near zero, greatly reducing energy expenditure.
+<br>
+This is especially interesting for robotic manipulators and locomotion, as they are often tasked with performing single trajectories many times. 
+<br>
+During my literature research, I was looking into the possibility of using nonlinear normal modes for continuum soft manipulators. 
+However, while there is a lot of work available, no work had so far been performed on underactuated systems. I decided to tackle this in my thesis<br>
+To make this work, I rephrase the Eigenmanifold control problem to a trjectory tracking problem, preserving desired behaviour while allowing for the use of
+state-of-the-art trajectory tracking control methods. This essentially synthesizes two different fields to achieve further reaching results.<br>
+This project has taught me a lot related to soft robotic modelling and control, nonlinear control (and proving stability for nonlinear control) and differential geometry. 
+<br>
+My thesis is near finished, and I am planning my graduation around july 2025!
+</div>
+<div class="section-column-small">
+<div style="text-align:center; text-overflow: string; white-space: nowrap; padding-left:25%;">I will link my thesis here once it's public!</div>
+	<img src="2dof_animation.gif" alt="animation of double pendulum" class="center">
+	<br>
+	<img src="6dof_animation.gif" alt="animation of double pendulum" class="center">
+</div>
 </div>
 <!-- a -->
 <div class="project-hidden" id='march'>
+<div class="section-column-large" style="text-align:justify;">
 Project MARCH is a student-led research project where a multidisciplinary group of students spends a full-time (usually more than full-time) year designing,
         programming and building a fully motorized exoskeleton for paraplegic patients. Every year, a new team starts and creates a new and improved design, and every
         four years we participate in the CYBATHLON in Zürich.<br/>
@@ -33,9 +51,14 @@ Project MARCH is a student-led research project where a multidisciplinary group 
         I also got to experience what it's like working with both a very large, multidisciplinary team, and working and planning with a smaller, 
         more dedicated team (the software and control team). Overall, this experience has been priceless to me :)
 </div>
+<div class="section-column-small">
+	<img src="march_website.gif" alt="Gif of the project march 8 exoskeleton" class="center" style="width:200%; padding-left:0%; margin-left:0%;">
+</div>
+</div>
 
 <!-- a -->
-<div class="project" id='stogl'>
+<div class="project-hidden" id='stogl'>
+<div class="section-column-large" style="text-align:justify;">
 For my internship, my aim was to design a ROS 2 software architecture for general machine tending tasks of manipulators.
         I started the project with to goals in mind: to be robot-agnostic, and task-agnostic. We believed this would be highly beneficial for
         the (partial) automatisation of a variety of general manipulator tasks with a high repeatability. By designing the architecture in such a way
@@ -46,10 +69,24 @@ For my internship, my aim was to design a ROS 2 software architecture for genera
         is based on PDDL and is made modular in such a way that it becomes easy to define new tasks through only modifying the knowledge base rather than any
         deployed code, improving accessibility. For the motion planner, I employed moveit2.
 </div>
+<div class="section-column-small">
+	<img src="stogl_pic1.png" alt="Stogl picture" class="center" style="width:200%; padding-left:0%; margin-left:0%;">
+</div>
+</div>
 
 <!-- a -->
 <div class="project-hidden" id='deino'>
-Can't share much on this yet, but soon! :)
+<div class="section-column-large" style="text-align:justify;">
+As this project just started, I can unfortunately not share much of the results or progress. What I can share is that I've joined this small-scale 
+student research project where we aim to design and create a tailed bipedal robot. Once I can share more, I will!
+<br>
+Currently, I'm working on the initial mechanical prototype, but I'm planning to move to simulation for initial locmotion algorithms soon!
+<br>
+After my thesis, I will be able to spend more time on this again.
 </div>
+<div class="section-column-small">
+<img src="deinobot.png" alt="Initial CAD design" class="center" style="width:150%; margin-left:25%;">
+</div>
+<div>
 
 </html>

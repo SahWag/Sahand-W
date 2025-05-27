@@ -87,7 +87,7 @@ li.selected{
 
 @keyframes open-iframe {
   from {height: 0vh; color:#EFE3C2;}
-  to {height: 65vh; color:#123524;}
+  to {height: 80vh; color:#123524;}
 }
 
 @keyframes close-page {
@@ -156,7 +156,7 @@ iframe.section{
 	animation-name: open-iframe;
 	border-left: 2pt solid #333333;
 	border-right: 2pt solid #333333;
-	height: 65vh;
+	height: 80vh;
 }
 
 .section a{
@@ -181,7 +181,7 @@ transition: 1s;
 	padding-bottom:1%;
 	width:90%;
 	height:59vh;
-	font-size: 16px;
+	font-size: 14px;
 	text-align:justify;
 	overflow-y:scroll;
 	scrollbar-color: #333333 #8AB2A6;
@@ -229,16 +229,35 @@ hr {
 
 .scolumn {
   float: left;
-  width: 10%;
+  width: 5%;
   padding: auto;
   text-align: center;
 }
 
 .mcolumn {
   float: left;
-  width: 80%;
+  width: 90%;
   padding: auto;
   text-align: center;
+}
+
+
+.section-column-large {
+	float: left;
+	width: 60%;
+	padding: auto;
+	font-size: 12pt;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.section-column-small {
+	float: left;
+	width: 20%;
+	padding: auto;
+	padding-left:2%;
+	padding-right:2%;
+	font-size: 12pt;
 }
 
 .arrow {
@@ -256,6 +275,7 @@ hr {
 	border: 2pt solid white;
 	padding: 2%;
 	box-shadow: 0px 4px #333333;
+	margin: auto;
 	margin-top: 24.5vh;
 	width:65%;
 	height:auto;
@@ -270,4 +290,13 @@ hr {
 
 .hidden {
    display: none;
+}
+
+.center {
+	display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 100%;
+  border-style: solid white;
+  box-shadow: 2px 2px;
 }
