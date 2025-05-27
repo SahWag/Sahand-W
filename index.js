@@ -1,17 +1,16 @@
 let project_titles = ['Virtual dynamics Eigenmanifold control', 'Project March','Stogl robotics internship','Deinobotics'
 ,'Infinitower', 'Ourobouros','Bushidog','Find Home', 'Pilgrimage', 'Bean Guys'];
 let project_subtitles = ['A two-layer architecture for controlling nonlinear normal modes of underactuated mechanical systems'
-, 'A fully motorized lower-body exoskeleton','A task-agnostic, robot-agnostic task planner for ROS 2 using symbolic reasoning','A robotic biped with a tail'
-,'Made using: C++ & SFML-2 &emsp; Responsible for: Game design, programming & art'
-,'Made using: GMS2 &emsp; Responsible for: Game design & programming','Made using: GMS2 &emsp; Responsible for: Game design & programming'
-,'Made using: GMS2 &emsp; Responsible for: Game design, programming & art', 'Made using: GMS2 &emsp; Responsible for: Game design, programming & art'
-,'Made using: GMS2 &emsp; Responsible for: Game design & programming'];
+, 'A fully motorized lower-body exoskeleton','A task-agnostic, robot-agnostic task planner for ROS 2 using symbolic reasoning','A robotic biped with a tail'];
 
 let games_titles = ['Infinitower', 'Ourobouros','Bushidog','Find Home', 'Pilgrimage', 'Bean Guys'];
 let games_subtitles = ['Made using: C++ & SFML-2 &emsp; Responsible for: Game design, programming & art'
 ,'Made using: GMS2 &emsp; Responsible for: Game design & programming','Made using: GMS2 &emsp; Responsible for: Game design & programming'
 ,'Made using: GMS2 &emsp; Responsible for: Game design, programming & art', 'Made using: GMS2 &emsp; Responsible for: Game design, programming & art'
 ,'Made using: GMS2 &emsp; Responsible for: Game design & programming'];
+
+let games_urls = ['','https://squp.itch.io/ouroboros',''
+, 'https://gamejolt.com/games/FindHome/638967', 'https://cakeprediction.itch.io/pilgrimage', 'https://jasontomlee.itch.io/beanguys']
 
 	
 function transition() {
@@ -167,8 +166,10 @@ function shiftR_games(id_) {
 	current_index+=1;
 	if (current_index>=projects.length){current_index=0;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
+	let basestr = "<a href='";
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
-	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=games_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=
+		basestr.concat(games_urls[current_index],"'>",games_titles[current_index],'</a>');
 	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=games_subtitles[current_index];
 
 
@@ -193,8 +194,12 @@ function shiftL_games(id_) {
 	current_index -=1;
 	if (current_index<0){current_index=projects.length-1;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
+	
+	let basestr = "<a href='";
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
-	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=games_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=
+		basestr.concat(games_urls[current_index],"'>",games_titles[current_index],'</a>');
+	
 	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=games_subtitles[current_index];
 
 
