@@ -166,7 +166,7 @@ function shiftR_games(id_) {
 	current_index+=1;
 	if (current_index>=projects.length){current_index=0;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
-	let basestr = "<a href='";
+	let basestr = "<a target='_blank' href='";
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=
 		basestr.concat(games_urls[current_index],"'>",games_titles[current_index],'</a>');
@@ -195,7 +195,7 @@ function shiftL_games(id_) {
 	if (current_index<0){current_index=projects.length-1;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
 	
-	let basestr = "<a href='";
+	let basestr = "<a target='_blank' href='";
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
 	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=
 		basestr.concat(games_urls[current_index],"'>",games_titles[current_index],'</a>');
