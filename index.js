@@ -1,6 +1,11 @@
-let project_titles = ['Virtual dynamics Eigenmanifold control', 'Project March','Stogl robotics internship','Biped project'];
+let project_titles = ['Virtual dynamics Eigenmanifold control', 'Project March','Stogl robotics internship','Deinobotics'
+,'Infinitower', 'Ourobouros','Bushidog','Find Home', 'Pilgrimage', 'Bean Guys'];
 let project_subtitles = ['A two-layer architecture for controlling nonlinear normal modes of underactuated mechanical systems'
-, 'A fully motorized lower-body exoskeleton<br>for pilots with a full spinal chord injury','A task-agnostic, robot-agnostic task planner for<br>ROS 2 using symbolic reasoning','A robotic biped with a tail<br>'];
+, 'A fully motorized lower-body exoskeleton','A task-agnostic, robot-agnostic task planner for ROS 2 using symbolic reasoning','A robotic biped with a tail'
+,'Made using: C++ & SFML-2 &emsp; Responsible for: Game design, programming & art'
+,'Made using: GMS2 &emsp; Responsible for: Game design & programming','Made using: GMS2 &emsp; Responsible for: Game design & programming'
+,'Made using: GMS2 &emsp; Responsible for: Game design, programming & art', 'Made using: GMS2 &emsp; Responsible for: Game design, programming & art'
+,'Made using: GMS2 &emsp; Responsible for: Game design & programming'];
 	
 function transition() {
 	document.getElementById("test1").style.border="1px solid";
@@ -28,6 +33,10 @@ function setAsSelected(id_) {
 					
 					case 'b_rob':
 					writeRobot();
+					break;
+					
+					case 'b_gms':
+					writeGames();
 					break;
 
 					default:
@@ -73,6 +82,12 @@ function writeRobot(){
 	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'robots.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
 }
 
+function writeGames(){
+	document.getElementById("main_body").className = 'body-open';
+	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'games.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
+}
+
+
 function writeEmpty(){
 	document.getElementById("main_body").innerHTML = "";
 }
@@ -81,7 +96,7 @@ function writeEmpty(){
 // test
 function shiftR(id_) {
 	var frameObj = document.getElementById('frame');
-	var projects = ['thesis', 'march','stogl','deino'];
+	var projects = ['thesis', 'march','stogl','deino', 'infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
 	var current_index = 0;
 	for(let i=0; i<projects.length; i++){
 		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
@@ -105,7 +120,7 @@ function shiftR(id_) {
 
 function shiftL(id_) {
 	var frameObj = document.getElementById('frame');
-	var projects = ['thesis', 'march','stogl','deino'];
+	var projects = ['thesis', 'march','stogl','deino', 'infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
 	
 	var current_index = 0;
 	console.log(frameObj.contentWindow.document.getElementsByClassName('project'));
