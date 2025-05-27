@@ -6,6 +6,13 @@ let project_subtitles = ['A two-layer architecture for controlling nonlinear nor
 ,'Made using: GMS2 &emsp; Responsible for: Game design & programming','Made using: GMS2 &emsp; Responsible for: Game design & programming'
 ,'Made using: GMS2 &emsp; Responsible for: Game design, programming & art', 'Made using: GMS2 &emsp; Responsible for: Game design, programming & art'
 ,'Made using: GMS2 &emsp; Responsible for: Game design & programming'];
+
+let games_titles = ['Infinitower', 'Ourobouros','Bushidog','Find Home', 'Pilgrimage', 'Bean Guys'];
+let games_subtitles = ['Made using: C++ & SFML-2 &emsp; Responsible for: Game design, programming & art'
+,'Made using: GMS2 &emsp; Responsible for: Game design & programming','Made using: GMS2 &emsp; Responsible for: Game design & programming'
+,'Made using: GMS2 &emsp; Responsible for: Game design, programming & art', 'Made using: GMS2 &emsp; Responsible for: Game design, programming & art'
+,'Made using: GMS2 &emsp; Responsible for: Game design & programming'];
+
 	
 function transition() {
 	document.getElementById("test1").style.border="1px solid";
@@ -187,8 +194,8 @@ function shiftL_games(id_) {
 	if (current_index<0){current_index=projects.length-1;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
-	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
-	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=games_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=games_subtitles[current_index];
 
 
 }
