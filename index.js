@@ -79,12 +79,12 @@ function writeResearch(){
 
 function writeRobot(){
 	document.getElementById("main_body").className = 'body-open';
-	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'robots.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
+	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL_robots()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'robots.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR_robots()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
 }
 
 function writeGames(){
 	document.getElementById("main_body").className = 'body-open';
-	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'games.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
+	document.getElementById("main_body").innerHTML = "<div class='row'><div class='scolumn'><img class='arrow' id='left' src='arrow.png' onclick='shiftL_games()' style='transform: scale(-1, 1);'></div><div class='mcolumn'><iframe id='frame', src=\'games.html\', class='section' ,scrolling='no'></iframe></div><div class='scolumn'><img class='arrow' id='right' onclick='shiftR_games()' src='arrow.png' style='transform: scale(1, 1);'></div></div>";
 }
 
 
@@ -94,9 +94,9 @@ function writeEmpty(){
 
 
 // test
-function shiftR(id_) {
+function shiftR_robots(id_) {
 	var frameObj = document.getElementById('frame');
-	var projects = ['thesis', 'march','stogl','deino', 'infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
+	var projects = ['thesis', 'march','stogl','deino'];
 	var current_index = 0;
 	for(let i=0; i<projects.length; i++){
 		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
@@ -118,9 +118,59 @@ function shiftR(id_) {
 
 }
 
-function shiftL(id_) {
+function shiftL_robots(id_) {
 	var frameObj = document.getElementById('frame');
-	var projects = ['thesis', 'march','stogl','deino', 'infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
+	var projects = ['thesis', 'march','stogl','deino'];
+	
+	var current_index = 0;
+	console.log(frameObj.contentWindow.document.getElementsByClassName('project'));
+	for(let i=0; i<projects.length; i++){
+		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
+		{
+		current_index = i;
+		}
+	}
+	
+	// frameObj.contentWindow.document.getElementsByClassName('project')[0].style.top='100vh';
+	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
+	current_index -=1;
+	if (current_index<0){current_index=projects.length-1;}
+	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
+	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
+
+
+}
+
+//
+function shiftR_games(id_) {
+	var frameObj = document.getElementById('frame');
+	var projects = ['infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
+	var current_index = 0;
+	for(let i=0; i<projects.length; i++){
+		if (frameObj.contentWindow.document.getElementsByClassName('project')[0].id == projects[i])
+		{
+		current_index = i;
+		}
+	}
+
+	// frameObj.contentWindow.document.getElementsByClassName('project')[0].style.top='100vh';
+	frameObj.contentWindow.document.getElementsByClassName('project')[0].className='project-hidden';
+	current_index+=1;
+	if (current_index>=projects.length){current_index=0;}
+	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
+	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
+
+
+
+}
+
+function shiftL_games(id_) {
+	var frameObj = document.getElementById('frame');
+	var projects = ['infinitower', 'ouroboros', 'bushidog', 'findhome', 'pilgrimage', 'beanguys'];
 	
 	var current_index = 0;
 	console.log(frameObj.contentWindow.document.getElementsByClassName('project'));
