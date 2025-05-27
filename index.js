@@ -168,8 +168,8 @@ function shiftR_games(id_) {
 	if (current_index>=projects.length){current_index=0;}
 	// frameObj.contentWindow.document.getElementById(projects[current_index]).style.top='0vh';
 	frameObj.contentWindow.document.getElementById(projects[current_index]).className='project';
-	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=project_titles[current_index];
-	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=project_subtitles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big')[0].innerHTML=games_titles[current_index];
+	frameObj.contentWindow.document.getElementsByClassName('big_subtitle')[0].innerHTML=games_subtitles[current_index];
 
 
 
